@@ -1,0 +1,19 @@
+{
+  "name": "devcamperrestfulapi",
+  "version": "1.0.0",
+  "description": "Devcamper RESTfulapi service",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/devsurren/DevcamperRESTfulapi.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/devsurren/DevcamperRESTfulapi/issues"
+  },
+  "homepage": "https://github.com/devsurren/DevcamperRESTfulapi#readme"
+}
