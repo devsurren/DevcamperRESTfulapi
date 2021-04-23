@@ -1,13 +1,14 @@
 const express = require('express');
-const { format } = require('morgan');
-const dotenv = require('dotenv').config({path:'./config/config'});
+const config = require('config');
 const morgan = require('morgan');
 
 //Custom
-
 const bootcammiddleware=require('./routes/bootcamproutes');
 
 const app = express();
+
+//Body Parser
+app.use(express.json());
 
 app.use(morgan("tiny"));
 
@@ -15,6 +16,6 @@ app.use(morgan("tiny"));
 
 app.use('/api/v1/bootcamp',bootcammiddleware);
 
-const PORT = process.env.PORT||5000
+const PORT = config.get("PORT");
 
 app.listen(PORT,console.log(`Server Listening on ${PORT}`));
